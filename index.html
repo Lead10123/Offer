@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Free Dunkin' Donuts Samples!</title>
+  
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID'); // Replace with your Pixel ID
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" />
+  </noscript>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXX-X'); // Replace with your Analytics ID
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5821f, #e11383);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      max-width: 420px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 26px;
+      color: #e11383;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0 20px;
+    }
+    .cta-button {
+      background-color: #f5821f;
+      color: #fff;
+      padding: 14px 22px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #d76e10;
+    }
+    .samples-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .note {
+      font-size: 13px;
+      color: #888;
+      margin-top: 15px;
+    }
+    .countdown {
+      font-size: 18px;
+      color: #ff3e3e;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://1000logos.net/wp-content/uploads/2021/04/Dunkin-Donuts-logo.png" alt="Dunkin Donuts Logo" class="logo" />
+    <img src="https://images.unsplash.com/photo-1605472565793-b9007d5c4215?auto=format&fit=crop&w=600&q=80" alt="Free Donuts" class="samples-img" />
+    <h1>🍩 Claim Your FREE Dunkin' Donuts Samples!</h1>
+    <p>Sign up today and receive a voucher for a free Dunkin' Donuts sample box. Limited time offer for USA residents only!</p>
+    <div class="countdown" id="countdown"></div>
+    <a href="https://bit.ly/44ltaRQ" class="cta-button" target="_blank">Get My Free Donuts 🍩</a>
+    <p class="note">No credit card required · 100% legit · Offer ends soon</p>
+  </div>
+
+  <script>
+    const countdownEl = document.getElementById('countdown');
+    let time = 10 * 60;
+    const updateCountdown = () => {
+      const minutes = Math.floor(time / 60);
+      const seconds = time % 60;
+      countdownEl.innerHTML = `⏳ Offer expires in: ${minutes}m ${seconds < 10 ? '0' : ''}${seconds}s`;
+      time--;
+      if (time < 0) {
+        countdownEl.innerHTML = "⚠️ Offer has expired!";
+      }
+    };
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
